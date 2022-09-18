@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="com.uz.show.supportThread" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
+	<packageinformation>
+		<packagename>Display Window: Support Threads for Entries</packagename>
+		<packagedescription>Automatically generates support threads for Entries.</packagedescription>
+		<packagename language="de">Schaufenster: Diskussionsthemen für Einträge</packagename>
+		<packagedescription language="de">Erzeugt automatisch Support-Themen für Einträge.</packagedescription>
+		<version>5.5.0</version>
+		<date>2022-05-30</date>
+	</packageinformation>
+	
+	<authorinformation>
+		<author>Zaydowicz</author>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="5.3.0">com.woltlab.wbb</requiredpackage>
+		<requiredpackage minversion="5.3.0">com.uz.show</requiredpackage>
+	</requiredpackages>
+	
+	<excludedpackages>
+		<excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+	
+	<instructions type="install">
+		<instruction type="sql">install.sql</instruction>
+		<instruction type="file" application="show">files.tar</instruction>
+		<instruction type="acpTemplate" application="show">acptemplates.tar</instruction>
+		<instruction type="template" application="show">templates.tar</instruction>
+		<instruction type="option">option.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
+		<instruction type="templateListener">templateListener.xml</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.3.*">
+		<instruction type="file" application="show">files.tar</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.4.*">
+		<instruction type="file" application="show">files.tar</instruction>
+	</instructions>
+</package>

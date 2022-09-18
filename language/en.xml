@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="en">
+	<category name="show.entry">
+		<item name="show.entry.button.jumpToSupportThread"><![CDATA[Support Thread]]></item>
+		<item name="show.entry.supportThread.boardID"><![CDATA[Forum]]></item>
+		<item name="show.entry.supportThread.boardID.description"><![CDATA[Support and discussion threads will be created in the selected forum.]]></item>
+		<item name="show.entry.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}reply{else}replies{/if}{if $supportThread->replies > 0}, last: {@$supportThread->lastPostTime|time}{/if}]]></item>
+		<item name="show.entry.supportThread.message"><![CDATA[<p>{@$entry->username} added a new entry:<br>[entry]{@$entry->entryID}[/entry]</p>
+<woltlab-quote>{@$entry->getMessage()}</woltlab-quote>]]></item>
+		<item name="show.entry.supportThread.subject"><![CDATA[{@$entry->getSubject()}]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.show.supportThread"><![CDATA[Support Thread]]></item>
+		<item name="wcf.acp.option.category.show.supportThread.description"><![CDATA[Support and discussion threads are automatically created for each new entry in the selected forum.]]></item>
+		<item name="wcf.acp.option.show_support_thread_board_id"><![CDATA[Forum]]></item>
+		<item name="wcf.acp.option.show_support_thread_board_id.description"><![CDATA[Support and discussion threads will be created in the selected forum.]]></item>
+		<item name="wcf.acp.option.show_support_thread_categories"><![CDATA[Categories]]></item>
+		<item name="wcf.acp.option.show_support_thread_categories.description"><![CDATA[Create support and discussion threads for entries in the selected categories only.<br>Only the main categories and not the additional categories are considered.]]></item>
+		<item name="wcf.acp.option.show_support_thread_single_board"><![CDATA[Single forum for all categories]]></item>
+		<item name="wcf.acp.option.show_support_thread_single_board.description"><![CDATA[Support and discussion threads will be created in the specified forum, regardless of the selected categories. Disabling this feature allows you to edit the desired categories, and assign a specific forum to them.<br>Only the main categories and not the additional categories are considered.]]></item>
+	</category>
+</language>

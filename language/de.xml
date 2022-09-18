@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="de">
+	<category name="show.entry">
+		<item name="show.entry.button.jumpToSupportThread"><![CDATA[Support-Thema]]></item>
+		<item name="show.entry.supportThread.boardID"><![CDATA[Forum]]></item>
+		<item name="show.entry.supportThread.boardID.description"><![CDATA[Im ausgewählten Forum werden die Support- bzw. Diskussions-Themen angelegt.]]></item>
+		<item name="show.entry.supportThread.info"><![CDATA[{#$supportThread->replies} Antwort{if $supportThread->replies != 1}en{/if}{if $supportThread->replies > 0}, zuletzt: {@$supportThread->lastPostTime|time}{/if}]]></item>
+		<item name="show.entry.supportThread.message"><![CDATA[<p>{@$entry->username} hat einen neuen Eintrag hinzugefügt:<br>[entry]{@$entry->entryID}[/entry]</p>
+<woltlab-quote>{@$entry->getMessage()}</woltlab-quote>]]></item>
+		<item name="show.entry.supportThread.subject"><![CDATA[{@$entry->getSubject()}]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.show.supportThread"><![CDATA[Support-Thema]]></item>
+		<item name="wcf.acp.option.category.show.supportThread.description"><![CDATA[Generiert automatisch für jeden neu erstellten Eintrag ein Support- bzw. Diskussions-Thema im ausgewählten Forum.]]></item>
+		<item name="wcf.acp.option.show_support_thread_board_id"><![CDATA[Forum]]></item>
+		<item name="wcf.acp.option.show_support_thread_board_id.description"><![CDATA[Im ausgewählten Forum werden die Support-Themen angelegt.]]></item>
+		<item name="wcf.acp.option.show_support_thread_categories"><![CDATA[Kategorien]]></item>
+		<item name="wcf.acp.option.show_support_thread_categories.description"><![CDATA[Ausschließlich für Einträge der gewählten Kategorien wird ein Support- bzw. Diskussions-Thema erstellt.<br>Es werden nur die Hauptkategorien und nicht die zusätzlichen Kategorien berücksichtigt.]]></item>
+		<item name="wcf.acp.option.show_support_thread_single_board"><![CDATA[Einheitliches Forum für alle Kategorien verwenden]]></item>
+		<item name="wcf.acp.option.show_support_thread_single_board.description"><![CDATA[Themen werden für alle Kategorien im selben Forum angelegt. Alternativ {if LANGUAGE_USE_INFORMAL_VARIANT}kannst du{else}können Sie{/if} diese Option deaktivieren und die gewünschten Kategorien bearbeiten, um diesen ein individuelles Forum zuzuweisen.<br>Es werden nur die Hauptkategorien und nicht die zusätzlichen Kategorien berücksichtigt.]]></item>
+	</category>
+</language>

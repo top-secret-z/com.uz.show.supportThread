@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
-	<import>
-		<eventlistener name="showCategoryAddSupportThreadBoard">
-			<eventclassname>show\acp\form\CategoryAddForm</eventclassname>
-			<eventname>assignVariables,save,validate</eventname>
-			<listenerclassname>show\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-		<eventlistener name="showCategoryEditSupportThreadBoard">
-			<eventclassname>show\acp\form\CategoryEditForm</eventclassname>
-			<eventname>assignVariables,readData,save,validate</eventname>
-			<listenerclassname>show\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-		
-		<eventlistener name="showSupportThread">
-			<eventclassname>show\page\EntryPage</eventclassname>
-			<eventname>assignVariables</eventname>
-			<listenerclassname>show\system\event\listener\EntryPageSupportThreadListener</listenerclassname>
-		</eventlistener>
-		<eventlistener name="showSupportThreadAction">
-			<eventclassname>show\data\entry\EntryAction</eventclassname>
-			<eventname>finalizeAction</eventname>
-			<listenerclassname>show\system\event\listener\EntryActionSupportThreadListener</listenerclassname>
-		</eventlistener>
-		
-		<eventlistener name="showActionAssignLabel">
-			<eventclassname>show\data\entry\EntryAction</eventclassname>
-			<eventname>finalizeAction</eventname>
-			<listenerclassname>show\system\event\listener\AssignLabelSupportThreadListener</listenerclassname>
-		</eventlistener>
-		<eventlistener name="showAddAssignLabel">
-			<eventclassname>show\form\EntryAddForm</eventclassname>
-			<inherit>1</inherit>
-			<eventname>saved</eventname>
-			<listenerclassname>show\system\event\listener\AssignLabelSupportThreadListener</listenerclassname>
-		</eventlistener>
-	</import>
+    <import>
+        <eventlistener name="showCategoryAddSupportThreadBoard">
+            <eventclassname>show\acp\form\CategoryAddForm</eventclassname>
+            <eventname>assignVariables,save,validate</eventname>
+            <listenerclassname>show\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+        <eventlistener name="showCategoryEditSupportThreadBoard">
+            <eventclassname>show\acp\form\CategoryEditForm</eventclassname>
+            <eventname>assignVariables,readData,save,validate</eventname>
+            <listenerclassname>show\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+
+        <eventlistener name="showSupportThread">
+            <eventclassname>show\page\EntryPage</eventclassname>
+            <eventname>assignVariables</eventname>
+            <listenerclassname>show\system\event\listener\EntryPageSupportThreadListener</listenerclassname>
+        </eventlistener>
+        <eventlistener name="showSupportThreadAction">
+            <eventclassname>show\data\entry\EntryAction</eventclassname>
+            <eventname>finalizeAction</eventname>
+            <listenerclassname>show\system\event\listener\EntryActionSupportThreadListener</listenerclassname>
+        </eventlistener>
+
+        <eventlistener name="showActionAssignLabel">
+            <eventclassname>show\data\entry\EntryAction</eventclassname>
+            <eventname>finalizeAction</eventname>
+            <listenerclassname>show\system\event\listener\AssignLabelSupportThreadListener</listenerclassname>
+        </eventlistener>
+        <eventlistener name="showAddAssignLabel">
+            <eventclassname>show\form\EntryAddForm</eventclassname>
+            <inherit>1</inherit>
+            <eventname>saved</eventname>
+            <listenerclassname>show\system\event\listener\AssignLabelSupportThreadListener</listenerclassname>
+        </eventlistener>
+    </import>
 </data>
